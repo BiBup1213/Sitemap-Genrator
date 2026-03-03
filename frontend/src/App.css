@@ -1,0 +1,109 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1b1f24;
+  background: #f7f8fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #eef3ff, #f7f8fb 50%);
+}
+
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(10, 28, 68, 0.08);
+}
+
+h1 {
+  margin: 0 0 20px;
+}
+
+.controls {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c3c9d8;
+  border-radius: 8px;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0b5ed7;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.download-btn {
+  margin-bottom: 12px;
+}
+
+.progress {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #d7e2ff;
+  border-top-color: #0b5ed7;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: #b42318;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #d5dae7;
+  text-align: left;
+  padding: 8px;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+th {
+  background: #f3f5fc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 16px;
+    padding: 16px;
+  }
+}
