@@ -143,7 +143,7 @@ export default function App() {
           id="domain"
           value={domain}
           onChange={(event) => setDomain(event.target.value)}
-          placeholder="zollsoft.de"
+          placeholder="example.com"
           disabled={isRunning}
         />
         <button type="submit" disabled={isRunning}>

@@ -97,6 +97,14 @@ td {
   word-break: break-word;
 }
 
+th:first-child,
+td:first-child {
+  width: 56px;
+  min-width: 56px;
+  white-space: nowrap;
+  word-break: normal;
+}
+
 th {
   background: #f3f5fc;
 }
